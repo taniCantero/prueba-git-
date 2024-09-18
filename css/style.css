@@ -1,43 +1,153 @@
-.titulo {
-    color: rgb(78, 4, 148);
-}
-.subtitulos {
-    color: blueviolet;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*agregar paleta de colores conforme logo RGB*/
-.boton {
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #33a1fd;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.hero-text h2 {
+    color: #33a1fd;
+    font-size: 2.5rem;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background-color: #33a1fd;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    color: #fff;
-    background-image: linear-gradient(30deg, #0400ff, #8259e2);
-    border-radius: 20px;
-    background-size: 100% auto;
-    font-family: inherit;
-    font-size: 17px;
-    padding: 0.6em 1.5em;
-   }
-   
-   button:hover {
-    background-position: right center;
-    background-size: 200% auto;
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse512 1.5s infinite;
-   }
-   
-   @keyframes pulse512 {
-    0% {
-     box-shadow: 0 0 0 0 #7e35dd66;
-    }
-   
-    70% {
-     box-shadow: 0 0 0 10px rgba(149, 81, 189, 0);
-    }
-   
-    100% {
-     box-shadow: 0 0 0 0 rgba(156, 90, 218, 0);
-    }
-   }
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
 
-   /* css de reff uiverse*/
+.hero .btn:hover {
+    background-color: #288ad7;
+}
 
-   
+.servicios {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    color: #33a1fd;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    color: #666;
+}
+
+.contacto {
+    padding: 50px;
+    background-color: #33a1fd;
+    color: white;
+    text-align: center;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto form input, 
+.contacto form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto form button {
+    background-color: white;
+    color: #33a1fd;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto form button:hover {
+    background-color: #fff;
+    color: #288ad7;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

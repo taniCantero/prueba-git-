@@ -1,46 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniGestion</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UniGestion EAS - Estudio Contable & Asesoría Laboral</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="titulo">NOSOTROS</h1>
-    <p class="texto">UniGestión es una consultora contable especializada en impulsar el crecimiento de emprendimientos en transición a pequeñas empresas.</p>
-    <h1 class="subtitulos">Soluciones Contables a la Medida</h1>
-    <p>Eleva tu negocio con nuestra gama de Soluciones financieras y contables, diseñadas para complementar y potenciar tu equipo interno.</p>
-    <h3>Cuida de tu negocio y deja que nosotros cuidemos tus números.</h3>
-    <p>¿Listo para una gestión contable eficiente?, descubre cómo podemos ayudarte.</p>
-    <!--Contenido muestra de sitio-->
-    <a  target="_blank" href="https://www.instagram.com/unigestion.py/">Ir a instagram</a> 
-    <br>
-    <h3>Descubre cómo UniGestión se integra a la perfección con tu negocio</h3>
-    <ul>
-        <!--agregar servicios-->
-        <li>Contabilidad</li>
-        <li>Remuneraciones</li>
-        <li>Análisis Financiero</li>
-        <li>Preparación de Impuestos</li>
-        <li>Gestión del Talento Humano</li>
-    </ul>
-    <a class="boton" href="./servicios.html">Ver Servicios</a> 
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="UniGestion EAS Logo">
+            <h1>UniGestion EAS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <br>
-    <h3>Habla con nosotros</h3>
-    <p>Apreciamos tu interés y ponemos a disposición el siguiente formulario para resolver cualquier duda o inquietud que tengas sobre nuestros servicios.</p>
-    <form action="/formulario" method="post"> 
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="nombre"/>
-        <label for="correo">correo</label>
-        <input type="email" id="correo" name="nombre" placeholder="correo electronico"/>
-        <label for="contacto">contacto</label>
-        <input type="tel" id="contacto" name="contacto" placeholder="número para contacto"/>
-        <br>
-        <textarea cols="92" rows="10" id="comentario" placeholder="Cuéntanos más" name="comentario"></textarea>
-        <br>
-        <button type="button">Enviar</button>
-    </form>
-</body> 
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Asesoría Contable y Laboral Innovadora</h2>
+            <p>En UniGestion EAS, ofrecemos soluciones contables y laborales ajustadas a las necesidades del mundo moderno.</p>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
+        <div class="hero-image">
+            <img src="asesoria.png" alt="Asesoría Online">
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-card">
+            <h3>Contabilidad Empresarial</h3>
+            <p>Gestión de cuentas y asesoramiento financiero para empresas de todos los tamaños.</p>
+        </div>
+        <div class="service-card">
+            <h3>Asesoría Laboral</h3>
+            <p>Consultoría en derecho laboral y apoyo en la gestión de recursos humanos.</p>
+        </div>
+        <div class="service-card">
+            <h3>Gestión Tributaria</h3>
+            <p>Optimización de procesos tributarios, declaración de impuestos y más.</p>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <h2>¿Quiénes Somos?</h2>
+        <p>UniGestion EAS es un equipo de profesionales dedicados a ofrecer servicios contables y laborales con un enfoque fresco e innovador. Nos especializamos en soluciones online para maximizar la eficiencia y comodidad de nuestros clientes.</p>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna pregunta? ¡Escríbenos!</p>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 UniGestion EAS - Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>
